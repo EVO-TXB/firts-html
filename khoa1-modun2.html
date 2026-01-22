@@ -1,0 +1,85 @@
+
+</head>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML đầu tiên</title>
+
+  <style>
+    /* Skip link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 10px;
+      background: black;
+      color: white;
+      padding: 8px;
+    }
+
+    .skip-link:focus {
+      top: 10px;
+    }
+
+    nav {
+      display: inline-block;
+      width: 80%;
+    }
+
+    nav img {
+      width: 10%;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 40% 40%;
+      justify-content: space-evenly;
+      row-gap: 20px;
+    }
+
+    .grid img {
+      width: 100%;
+    }
+
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Bỏ qua đến nội dung chính</a>
+
+  <nav>
+    <img src="https://via.placeholder.com/150" alt="Logo">
+    <ul>
+      <li><a href="#">Trang chủ</a></li>
+      <li><a href="#">Công viên</a></li>
+      <li><a href="#">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+    <h1>Nội dung chính</h1>
+
+    <section class="grid">
+      <img src="https://via.placeholder.com/300">
+      <img src="https://via.placeholder.com/300">
+      <img src="https://via.placeholder.com/300">
+      <img src="https://via.placeholder.com/300">
+    </section>
+
+    <section class="flex">
+      <img src="https://via.placeholder.com/200">
+      <img src="https://via.placeholder.com/200">
+      <img src="https://via.placeholder.com/200">
+    </section>
+  </main>
+
+</body>
+</html>
+
